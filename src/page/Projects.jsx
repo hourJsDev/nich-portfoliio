@@ -1,6 +1,5 @@
 import React from "react";
-import { PiArrowElbowLeft } from "react-icons/pi";
-import { Link, useNavigate } from "react-router";
+import { useNavigate } from "react-router";
 import { project } from "../db/data";
 function chunkArray(arr, size) {
   return arr.reduce(
@@ -16,12 +15,11 @@ const Projects = () => {
         <div key={index} className="flex w-full justify-end gap-[30px]">
           {p.map((p1) => (
             <div
-            
               onClick={() => router("/projects/" + p1.id.toString())}
               className={`w-[${
                 p1.id % 3 === 0 ? "40%" : "300px"
               }] max-md:w-[30%] max-md:h-[230px] h-[600px] flex flex-col gap-[20px]`}
-              key={p.id}
+              key={p1.name}
             >
               <div>
                 <h2 className="text-[70px] max-md:text-[18px] font-bold text-[#eeeeee]">

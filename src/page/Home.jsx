@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Link } from "react-router";
 import { FaInstagram, FaLinkedin, FaTelegram } from "react-icons/fa6";
 import { TbArrowElbowRight } from "react-icons/tb";

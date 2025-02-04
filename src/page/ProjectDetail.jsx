@@ -1,11 +1,12 @@
-import React, { useEffect, useMemo, useState } from "react";
-import { useParams, Link } from "react-router";
-import { PiArrowElbowLeft } from "react-icons/pi";
+import React, { useMemo } from "react";
+import { useParams } from "react-router";
 import { project } from "../db/data";
 const ProjectDetail = () => {
   const { id } = useParams();
+
   const state = useMemo(() => {
     const projectDetail = project.find((p) => p.id === Number(id));
+    document.title = projectDetail.name;
     return projectDetail;
   }, []);
 
