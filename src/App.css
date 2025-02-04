@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap");
+* {
+  font-family: "Quicksand", serif;
+  padding: 0;
+  box-sizing: border-box;
+  /* color: black; */
+}
+body {
+  padding: 10px 50px;
+}
+@media screen and (max-width: 575px) {
+  body {
+    padding: 10px;
+  }
+}
+.fadeIn {
+  animation: fadeIn 0.7s ease forwards;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
