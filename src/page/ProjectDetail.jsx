@@ -18,12 +18,12 @@ const ProjectDetail = () => {
         {state.name}
       </h3>
       {!state?.isNoMainImage && (
-        <div className="w-full  ">
+        <div className="w-full  bg-slate-300 ">
           <img className="w-full  object-contain" src={state.image} alt="" />
         </div>
       )}
       {state.images.length > 4 && (
-        <div className="w-full  ">
+        <div className="w-full  bg-slate-300 ">
           <img
             className="w-full  object-contain"
             src={state.images[0]}
@@ -35,7 +35,7 @@ const ProjectDetail = () => {
         {state.images.map((img, index) => {
           if (state.images.length > 4 && index === 0) return null;
           return (
-            <div className="w-[49%] mt-[20px] ">
+            <div className="w-[49%]  bg-slate-300 mt-[20px] ">
               <img className="w-full h-full object-cover" src={img} alt="" />
             </div>
           );

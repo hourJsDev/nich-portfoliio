@@ -19,7 +19,7 @@ const Projects = () => {
               onClick={() => router("/projects/" + p1.id.toString())}
               className={`w-[${
                 p1.id % 3 === 0 ? "40%" : "300px"
-              }] max-md:w-[30%] max-md:h-[230px] h-[500px] flex flex-col gap-[20px]`}
+              }] max-md:w-[30%] max-md:h-[230px] h-[600px] flex flex-col gap-[20px]`}
               key={p.id}
             >
               <div>
@@ -30,9 +30,15 @@ const Projects = () => {
                   {p1.name}
                 </p>
               </div>
-              <div className="w-full rounded-[3px] overflow-hidden h-full">
+              <div
+                className={`w-full ${
+                  !p1.isContain && "bg-slate-300"
+                } rounded-[3px] overflow-hidden h-full`}
+              >
                 <img
-                  className="w-full h-full object-cover"
+                  className={`w-full h-full object-${
+                    p1.isContain ? "contain" : "cover"
+                  }`}
                   src={p1.image}
                   alt={p1.name}
                 />

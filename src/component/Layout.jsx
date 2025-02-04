@@ -9,7 +9,6 @@ const Layout = () => {
   return (
     <div>
       <Outlet />
-      <p>&copy;</p>
     </div>
   );
 };
