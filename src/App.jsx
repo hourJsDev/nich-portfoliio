@@ -6,6 +6,7 @@ import ProjectLayout from "./component/ProjectLayout";
 import Projects from "./page/Projects";
 import "./App.css";
 import ProjectDetail from "./page/ProjectDetail";
+import Cv from "./page/Cv";
 const App = () => {
   const router = createBrowserRouter([
     {
@@ -15,6 +16,10 @@ const App = () => {
         {
           element: <Home />,
           index: true,
+        },
+        {
+          element: <Cv />,
+          path: "/cv",
         },
         {
           path: "projects",

@@ -16,6 +16,9 @@ body {
 .fadeIn {
   animation: fadeIn 0.7s ease forwards;
 }
+img {
+  cursor: pointer;
+}
 @keyframes fadeIn {
   0% {
     opacity: 0;

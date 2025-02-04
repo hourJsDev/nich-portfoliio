@@ -16,6 +16,7 @@ const Projects = () => {
         <div key={index} className="flex w-full justify-end gap-[30px]">
           {p.map((p1) => (
             <div
+            
               onClick={() => router("/projects/" + p1.id.toString())}
               className={`w-[${
                 p1.id % 3 === 0 ? "40%" : "300px"
@@ -32,7 +33,7 @@ const Projects = () => {
               </div>
               <div
                 className={`w-full ${
-                  !p1.isContain && "bg-slate-300"
+                  !p1.isContain && " bg-[#eeeeee]"
                 } rounded-[3px] overflow-hidden h-full`}
               >
                 <img
