@@ -8,12 +8,12 @@ export const project = [
       "A modern villa is a contemporary residential structure designed with clean lines, open spaces, and a strong connection to nature. It often features minimalist aesthetics, large glass windows, and an emphasis on functionality and sustainability. Modern villas are often found in scenic locations like beachfronts, hillsides, or urban luxury zones, combining elegance with contemporary living. Are you planning to design or invest in one?",
     images: [
       "/images/p1-1.jpg",
+      "/images/p1-6.jpg",
+      "/images/p1-7.jpg",
       "/images/p1-2.jpg",
       "/images/p1-3.jpg",
       "/images/p1-4.jpg",
       "/images/P1-5.jpg",
-      "/images/p1-6.jpg",
-      "/images/p1-7.jpg",
     ],
   },
   {
@@ -24,11 +24,11 @@ export const project = [
       "A classic villa is a luxurious residence that reflects traditional architectural styles, often inspired by European influences such as Roman, Greek, French, or Italian designs. These villas emphasize elegance, symmetry, and intricate detailing, offering a timeless and grand aesthetic. Classic villas are often found in historical cities, scenic countryside areas, or high-end residential neighborhoods, combining old-world charm with modern comforts. Are you interested in a specific classic villa style?",
     images: [
       "/images/p2-1.jpg",
+      "/images/p2-6.jpg",
+      "/images/p2-5.jpg",
       "/images/p2-2.jpg",
       "/images/p2-3.jpg",
       "/images/p2-4.jpg",
-      "/images/p2-5.jpg",
-      "/images/p2-6.jpg",
     ],
   },
   {
