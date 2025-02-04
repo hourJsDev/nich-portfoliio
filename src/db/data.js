@@ -58,7 +58,9 @@ export const project = [
   {
     id: 6,
     name: "The Pinnacle Residence",
-    image:
-      "https://img.freepik.com/free-photo/modern-apartment-architecture_1268-14696.jpg?ga=GA1.1.2086660801.1734715088&semt=ais_hybrid_sidr",
+    image: "/image/p6.jpg",
+    description: "",
+    images: ["/image/P6-1.png", "/image/P6-2.png", "/image/P6-3.png"],
+    isNoMainImage: true,
   },
 ];

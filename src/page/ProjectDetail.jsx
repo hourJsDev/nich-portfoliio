@@ -17,9 +17,11 @@ const ProjectDetail = () => {
       <h3 className="text-[80px] max-md:text-[20px] max-md:w-[auto] w-[500px] font-bold">
         {state.name}
       </h3>
-      <div className="w-full  ">
-        <img className="w-full  object-contain" src={state.image} alt="" />
-      </div>
+      {!state?.isNoMainImage && (
+        <div className="w-full  ">
+          <img className="w-full  object-contain" src={state.image} alt="" />
+        </div>
+      )}
       {state.images.length > 4 && (
         <div className="w-full  ">
           <img
@@ -39,7 +41,6 @@ const ProjectDetail = () => {
           );
         })}
       </div>
-      
     </div>
   );
 };
