@@ -4,6 +4,7 @@ import Home from "./page/Home";
 import Layout from "./component/Layout";
 import ProjectLayout from "./component/ProjectLayout";
 import Projects from "./page/Projects";
+import "./App.css";
 import ProjectDetail from "./page/ProjectDetail";
 const App = () => {
   const router = createBrowserRouter([
